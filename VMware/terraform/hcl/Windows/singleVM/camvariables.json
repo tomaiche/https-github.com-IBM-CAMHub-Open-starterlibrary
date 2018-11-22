@@ -219,7 +219,7 @@
       "description": "IPv4 gateway for vNIC configuration",
       "hidden": false,
       "label": "Virtual Machine Gateway Address - vm_1",
-      "default": "9.128.135.0",
+      "default": "9.128.135.1",
       "secured": false,
       "required": true,
       "immutable": false,
