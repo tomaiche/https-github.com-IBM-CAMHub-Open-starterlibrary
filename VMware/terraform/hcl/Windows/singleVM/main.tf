@@ -198,4 +198,11 @@ resource "vsphere_virtual_machine" "vm_1" {
     keep_on_remove = "${var.vm_1_root_disk_keep_on_remove}"
     datastore_id   = "${data.vsphere_datastore.vm_1_datastore.id}"
   }
+	
+  disk {
+    label          = "${var.vm_1_name}1.vmdk"
+    size           = "${var.vm_1_root_disk_size}"
+    keep_on_remove = "${var.vm_1_root_disk_keep_on_remove}"
+    datastore_id   = "${data.vsphere_datastore.vm_1_datastore.id}"
+  }
 }
