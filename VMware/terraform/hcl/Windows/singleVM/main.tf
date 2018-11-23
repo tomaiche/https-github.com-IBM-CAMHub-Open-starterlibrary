@@ -173,7 +173,7 @@ resource "vsphere_virtual_machine" "vm_1" {
     customize {
       windows_options {
 		     computer_name  = "${var.vm_1_name}"
-		     admin_password = "TecTec123"
+		     admin_password = "Templ4te!"
          workgroup      = "tecicpcam"
 	    }
       network_interface {
