@@ -231,7 +231,7 @@
       "description": "IPv4 address for vNIC configuration",
       "hidden": false,
       "label": "Virtual Machine IP Address - vm_1",
-      "default": "9.128.135.248",
+      "default": "9.128.135.252",
       "secured": false,
       "required": true,
       "immutable": false,
