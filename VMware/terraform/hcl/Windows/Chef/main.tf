@@ -171,11 +171,11 @@ resource "vsphere_virtual_machine" "vm_1" {
     template_uuid = "${data.vsphere_virtual_machine.vm_1_template.id}"
 
     customize {
-      linux_options {
-        domain    = "${var.vm_1_domain}"
-        host_name = "${var.vm_1_name}"
+      windows_options {
+        computer_name  = "${var.vm_1_name}"
+        workgroup      = "${var.vm_1_domain}"
+        admin_password = "TecTec123"
       }
-
       network_interface {
         ipv4_address = "${var.vm_1_ipv4_address}"
         ipv4_netmask = "${var.vm_1_ipv4_prefix_length}"
