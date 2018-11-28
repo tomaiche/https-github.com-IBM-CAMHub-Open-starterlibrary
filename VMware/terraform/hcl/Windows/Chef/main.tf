@@ -198,4 +198,17 @@ resource "vsphere_virtual_machine" "vm_1" {
     keep_on_remove = "${var.vm_1_root_disk_keep_on_remove}"
     datastore_id   = "${data.vsphere_datastore.vm_1_datastore.id}"
   }
-}
+  provisioner "chef" {
+  server_url      = "https://api.chef.io/organizations/pb_cjo"
+  user_name       = "chef-admin"
+  user_key        = "${file("~/Downloads/chef-repo-2/.chef/cjohannsen.pem")}"
+  node_name       = "${var.vm_1_name}"
+  run_list        = "role[httpd24-base-install]"
+  version         = "12.4.1"
+  }
+  connection {
+    type     = "winrm"
+    user     = "Administrator"
+    password = "TecTec123"
+  }
+  }
