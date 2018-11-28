@@ -171,11 +171,11 @@ resource "vsphere_virtual_machine" "vm_1" {
     template_uuid = "${data.vsphere_virtual_machine.vm_1_template.id}"
 
     customize {
-      linux_options {
-        domain    = "${var.vm_1_domain}"
-        host_name = "${var.vm_1_name}"
-      }
-
+      windows_options {
+		     computer_name  = "${var.vm_1_name}"
+		     admin_password = "TecTec123"
+         workgroup      = "tecicpcam"
+	    }
       network_interface {
         ipv4_address = "${var.vm_1_ipv4_address}"
         ipv4_netmask = "${var.vm_1_ipv4_prefix_length}"
@@ -193,9 +193,18 @@ resource "vsphere_virtual_machine" "vm_1" {
   }
 
   disk {
-    label          = "${var.vm_1_name}0.vmdk"
+    label          = "${var.vm_1_name}disk0.vmdk"
     size           = "${var.vm_1_root_disk_size}"
     keep_on_remove = "${var.vm_1_root_disk_keep_on_remove}"
     datastore_id   = "${data.vsphere_datastore.vm_1_datastore.id}"
+    unit_number    = 0	  
   }
+	
+  disk {
+    label          = "${var.vm_1_name}disk1.vmdk"
+    size           = "${var.vm_1_root_disk_size}"
+    keep_on_remove = "${var.vm_1_root_disk_keep_on_remove}"
+    datastore_id   = "${data.vsphere_datastore.vm_1_datastore.id}"
+    unit_number    = 1
+	  }
 }

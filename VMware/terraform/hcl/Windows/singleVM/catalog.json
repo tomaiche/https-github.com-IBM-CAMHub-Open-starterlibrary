@@ -1,5 +1,5 @@
 {
-  "name": "SingleVirtualMachine",
+  "name": "TomSingleVirtualMachineWindows",
   "description": "Create Virtual Machine with single vnic",
   "type": "prebuilt",
   "version": "1.0",
@@ -33,7 +33,7 @@
        },
        {
          "title": "Default Virtual Machine settings",
-         "description": "Standard machine type with 1 virtual CPU and 1 GB of memory."
+         "description": "Standard machine type with 2 virtual CPU and 8 GB of memory."
        },
        {
          "title": "Usage and special notes",
