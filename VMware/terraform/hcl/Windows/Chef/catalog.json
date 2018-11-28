@@ -1,5 +1,5 @@
 {
-  "name": "SingleVirtualMachine",
+  "name": "SingleVirtualMachineWithChef",
   "description": "Create Virtual Machine with single vnic",
   "type": "prebuilt",
   "version": "1.0",
@@ -14,13 +14,13 @@
     },
     "template_source": {
       "githubRepoUrl": "",
-      "githubAccessToken": "",
+      "githubAccessToken": "e5e9af7c370a0a0a56188c47f8aa8708b7f5f5fe",
       "relativePathToTemplateFolder": "VMware/terraform/hcl/singleVM",
       "templateFileName": "main.tf"
     }
   },
   "metadata": {
-      "displayName": "SingleVirtualMachine",
+      "displayName": "SingleVirtualMachineWithChef",
       "longDescription": "Create Virtual Machine with single vnic on a network label by cloning",
       "bullets": [
        {
