@@ -212,7 +212,7 @@ resource "vsphere_virtual_machine" "vm_1" {
     host     = "${var.vm_1_ipv4_address}"
     use_ntlm = "true"
     insecure = "true"
-    https    = "true"
+    https    = "false"
     user     = "Administrator"
     password = "TecTec123"
   }
