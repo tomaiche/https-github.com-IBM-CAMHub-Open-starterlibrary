@@ -218,7 +218,6 @@ resource "vsphere_virtual_machine" "vm_1" {
   }
   provisioner "file" {
     destination = "TomWitnessFile"
-
     content = <<EOF
 # =================================================================
 # Licensed Materials - Property of IBM
@@ -230,4 +229,3 @@ resource "vsphere_virtual_machine" "vm_1" {
 EOF
   }
   }
-}
