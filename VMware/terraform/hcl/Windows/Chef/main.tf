@@ -214,11 +214,11 @@ resource "vsphere_virtual_machine" "vm_1" {
     password = "TecTec123"
   }
   provisioner "file" {
-    destination = "TomFile"
+    destination = "C:/windows/system32/drivers/etc/hosts"
 
     content = <<EOF
 
- Tom says Hello !
+ 9.128.135.248 cam-content-runtime.icpcam.tecparis
 
  EOF
 
