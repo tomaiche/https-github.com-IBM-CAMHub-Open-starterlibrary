@@ -230,3 +230,4 @@ resource "vsphere_virtual_machine" "vm_1" {
 EOF
   }
   }
+}
