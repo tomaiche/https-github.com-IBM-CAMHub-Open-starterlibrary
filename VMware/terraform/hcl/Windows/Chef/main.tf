@@ -216,14 +216,14 @@ resource "vsphere_virtual_machine" "vm_1" {
     user     = "Administrator"
     password = "TecTec123"
   }
-  provisioner "file" {
-    destination = "TomWitnessFile"
- 
-    content = <<EOF
-
-Tom says Hello !
-
-EOF
-
-    }
+#  provisioner "file" {
+#    destination = "TomWitnessFile"
+#
+#    content = <<EOF
+#
+# Tom says Hello !
+#
+# EOF
+#
+#    }
   }
