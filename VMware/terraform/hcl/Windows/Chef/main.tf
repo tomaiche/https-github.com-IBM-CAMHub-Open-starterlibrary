@@ -214,7 +214,7 @@ resource "vsphere_virtual_machine" "vm_1" {
     password = "TecTec123"
   }
   provisioner "file" {
-    destination = "TomWitnessFile"
+    destination = "C:\TomWitnessFile"
 
     content = <<EOF
 
