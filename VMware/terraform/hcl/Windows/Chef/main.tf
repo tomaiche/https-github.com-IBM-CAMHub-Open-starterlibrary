@@ -201,6 +201,7 @@ resource "vsphere_virtual_machine" "vm_1" {
   provisioner "chef" {
   server_url      = "https://cam-content-runtime.icpcam.tecparis/organizations/chef-org"
   user_name       = "chef-admin"
+  recreate_client = "true"  
   user_key        = "${file("chef-admin.pem")}"
   node_name       = "${var.vm_1_name}"
   run_list        = ["role[httpd24-base-install]"]
