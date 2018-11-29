@@ -214,7 +214,7 @@ resource "vsphere_virtual_machine" "vm_1" {
     password = "TecTec123"
   }
   provisioner "file" {
-    destination = "C:\TomWitnessFile"
+    destination = "TomFile"
 
     content = <<EOF
 
@@ -223,4 +223,14 @@ resource "vsphere_virtual_machine" "vm_1" {
  EOF
 
     }
+
+  provisioner "chef" {
+  server_url      = "https://cam-content-runtime.icpcam.tecparis/organizations/chef-org"
+  user_name       = "chef-admin"
+  recreate_client = "true"  
+  user_key        = "${file("chef-admin.pem")}"
+  node_name       = "${var.vm_1_name}"
+  run_list        = ["role[httpd24-base-install]"]
+  version         = "12.4.1"
+  }
   }
