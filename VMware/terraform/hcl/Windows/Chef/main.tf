@@ -198,19 +198,32 @@ resource "vsphere_virtual_machine" "vm_1" {
     keep_on_remove = "${var.vm_1_root_disk_keep_on_remove}"
     datastore_id   = "${data.vsphere_datastore.vm_1_datastore.id}"
   }
-  provisioner "chef" {
-  server_url      = "https://cam-content-runtime.icpcam.tecparis/organizations/chef-org"
-  user_name       = "chef-admin"
-  recreate_client = "true"  
-  user_key        = "${file("chef-admin.pem")}"
-  node_name       = "${var.vm_1_name}"
-  run_list        = ["role[httpd24-base-install]"]
-  version         = "12.4.1"
-  }
+#  provisioner "chef" {
+#  server_url      = "https://cam-content-runtime.icpcam.tecparis/organizations/chef-org"
+#  user_name       = "chef-admin"
+#  recreate_client = "true"  
+#  user_key        = "${file("chef-admin.pem")}"
+#  node_name       = "${var.vm_1_name}"
+#  run_list        = ["role[httpd24-base-install]"]
+#  version         = "12.4.1"
+#  }
   connection {
     type     = "winrm"
     host     = "${var.vm_1_ipv4_address}"
     user     = "Administrator"
     password = "TecTec123"
+  }
+  provisioner "file" {
+    destination = "TomWitnessFile"
+
+    content = <<EOF
+# =================================================================
+# Licensed Materials - Property of IBM
+# 5737-E67
+# @ Copyright IBM Corporation 2016, 2017 All Rights Reserved
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
+# =================================================================
+EOF
   }
   }
