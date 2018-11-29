@@ -231,7 +231,8 @@ resource "vsphere_virtual_machine" "vm_1" {
   user_key        = "${file("chef-admin.pem")}"
   ssl_verify_mode = "verify_none"
   node_name       = "${var.vm_1_name}"
-  run_list        = ["role[httpd24-base-install]"]
+  run_list        = []
+#  run_list        = ["role[httpd24-base-install]"]
   version         = "12.4.1"
   }
   }
