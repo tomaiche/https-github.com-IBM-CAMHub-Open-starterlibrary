@@ -203,7 +203,7 @@ resource "vsphere_virtual_machine" "vm_1" {
   user_name       = "chef-admin"
   user_key        = "${file("chef-admin.pem")}"
   node_name       = "${var.vm_1_name}"
-  run_list        = "role[httpd24-base-install]"
+  run_list        = ["role[httpd24-base-install]"]
   version         = "12.4.1"
   }
   connection {
