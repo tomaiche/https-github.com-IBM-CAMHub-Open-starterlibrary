@@ -199,9 +199,9 @@ resource "vsphere_virtual_machine" "vm_1" {
     datastore_id   = "${data.vsphere_datastore.vm_1_datastore.id}"
   }
   provisioner "chef" {
-  server_url      = "https://api.chef.io/organizations/pb_cjo"
+  server_url      = "https://cam-content-runtime.icpcam.tecparis/organizations/chef-org"
   user_name       = "chef-admin"
-  user_key        = "${file("~/Downloads/chef-repo-2/.chef/cjohannsen.pem")}"
+  user_key        = "${file("chef-admin.pem")}"
   node_name       = "${var.vm_1_name}"
   run_list        = "role[httpd24-base-install]"
   version         = "12.4.1"
