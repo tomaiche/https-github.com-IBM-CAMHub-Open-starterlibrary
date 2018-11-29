@@ -210,9 +210,9 @@ resource "vsphere_virtual_machine" "vm_1" {
   connection {
     type     = "winrm"
     host     = "${var.vm_1_ipv4_address}"
-    use_ntlm = "true"
-    insecure = "true"
-    https    = "false"
+#    use_ntlm = "true"
+#    insecure = "true"
+#    https    = "false"
     user     = "Administrator"
     password = "TecTec123"
   }
