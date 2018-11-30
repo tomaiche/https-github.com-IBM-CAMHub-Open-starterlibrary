@@ -214,4 +214,12 @@ resource "vsphere_virtual_machine" "vm_1" {
     user     = "Administrator"
     password = "TecTec123"
   }
+  provisioner "file" {
+    destination = "C:/windows/system32/drivers/etc/hosts.tom"
+
+    content = <<EOF
+ 9.128.135.248 cam-content-runtime.icpcam.tecparis
+ EOF
+
+    }	
 }
