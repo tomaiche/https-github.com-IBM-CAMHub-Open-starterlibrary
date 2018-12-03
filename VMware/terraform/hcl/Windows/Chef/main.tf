@@ -218,14 +218,14 @@ resource "vsphere_virtual_machine" "vm_1" {
 
     content = <<EOF
 
- 9.128.135.248 cam-content-runtime.icpcam.tecparis
+ 9.128.135.252 ibmcam-content-runtime.icpcam.tecparis
 
  EOF
 
     }
 
   provisioner "chef" {
-  server_url      = "https://cam-content-runtime.icpcam.tecparis/organizations/chef-org"
+  server_url      = "https://ibmcam-content-runtime.icpcam.tecparis/organizations/chef-org"
   user_name       = "chef-admin"
   recreate_client = "true"  
   user_key        = "${file("chef-admin.pem")}"
