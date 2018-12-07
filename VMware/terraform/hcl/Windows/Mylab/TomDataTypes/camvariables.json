@@ -2,11 +2,34 @@
   "input_datatypes": [
     {
       "name": "TomDataType1",
-      "label": "Tom Data type 1"
-    },
-    {
-      "name": "TomDataType2",
-      "label": "Tom Data type 2"
+      "label": "Tom Data type 1",
+        "TomDataType1":
+      [
+        {
+          "name": "TomAttr1",
+          "type": "string",
+          "description": "1st Attribute",
+          "label": "tomat1",
+          "required": "false",
+          "secured": "false",
+          "immutable": "false",
+          "hidden": "false",
+          "default": "TomAt1",
+          "options": null
+        },
+        {
+          "name": "TomAttr2",
+          "type": "string",
+          "description": "2nd Attribute",
+          "label": "tomat2",
+          "required": "false",
+          "secured": "false",
+          "immutable": "false",
+          "hidden": "false",
+          "default": "TomAt2",
+          "options": null
+        }
+      ]
     }
   ],
   "output_datatype": "content_template_output",
