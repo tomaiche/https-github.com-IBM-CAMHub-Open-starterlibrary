@@ -2,10 +2,28 @@
   "input_datatypes": [
   ],
 <<<<<<< master
-<<<<<<< master
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< master
+<<<<<<< HEAD
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
+=======
+<<<<<<< master
+<<<<<<< HEAD
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
+=======
+<<<<<<< master
+<<<<<<< HEAD
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
+=======
 >>>>>>> b9c8aac define datatypes in camvariables.json
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a7f43a3 add datatype def and use to camvariables.json
+=======
 >>>>>>> f7452cc5675472bd76032795cbffbe844b1111b4
 =======
 >>>>>>> b9c8aac define datatypes in camvariables.json
@@ -13,8 +31,35 @@
 =======
 >>>>>>> b9989c0 define datatypes in camvariables.json
 >>>>>>> f7452cc add datatype def and use in camvariables.json
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
+=======
+>>>>>>> f7452cc5675472bd76032795cbffbe844b1111b4
+=======
+>>>>>>> b9c8aac define datatypes in camvariables.json
+>>>>>>> f7452cc add datatype def and use in camvariables.json
+=======
+>>>>>>> b9989c0 define datatypes in camvariables.json
+>>>>>>> f7452cc add datatype def and use in camvariables.json
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
+=======
+>>>>>>> f7452cc5675472bd76032795cbffbe844b1111b4
+=======
+>>>>>>> b9c8aac define datatypes in camvariables.json
+>>>>>>> f7452cc add datatype def and use in camvariables.json
+=======
+>>>>>>> b9989c0 define datatypes in camvariables.json
+>>>>>>> f7452cc add datatype def and use in camvariables.json
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
   "output_datatype": "content_template_output",
 <<<<<<< master
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< master
+=======
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
+=======
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
 <<<<<<< master
 <<<<<<< HEAD
 =======
@@ -58,12 +103,34 @@
 <<<<<<< master
 =======
 >>>>>>> b9c8aac define datatypes in camvariables.json
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a7f43a3 add datatype def and use to camvariables.json
+=======
 <<<<<<< master
 >>>>>>> f7452cc5675472bd76032795cbffbe844b1111b4
 =======
 >>>>>>> f7452cc add datatype def and use in camvariables.json
 =======
 >>>>>>> f7452cc add datatype def and use in camvariables.json
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
+=======
+<<<<<<< master
+>>>>>>> f7452cc5675472bd76032795cbffbe844b1111b4
+=======
+>>>>>>> f7452cc add datatype def and use in camvariables.json
+=======
+>>>>>>> f7452cc add datatype def and use in camvariables.json
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
+=======
+<<<<<<< master
+>>>>>>> f7452cc5675472bd76032795cbffbe844b1111b4
+=======
+>>>>>>> f7452cc add datatype def and use in camvariables.json
+=======
+>>>>>>> f7452cc add datatype def and use in camvariables.json
+>>>>>>> a7f43a30a29b7d6cfb8c4cdcffea35e2a07f9a6b
   "input_groups": [
     {
       "name": "cloud",
