@@ -1,8 +1,7 @@
     {
       "name": "TomDataType1",
       "label": "Tom Data Type 1",
-      "TomDataType1":
-      {
+      [
         {
         "name": "TomAttr1",
         "type": "string",
@@ -27,5 +26,5 @@
         "default": "TomAt2",
         "options": null
         }
-      }
+      ]
     }
