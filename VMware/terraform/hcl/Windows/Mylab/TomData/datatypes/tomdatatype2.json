@@ -1,23 +1,23 @@
-  {
-  "name" : "tomDT1",
-  "label": "tom data type 1",
-  "description" : "tom data type 1",
+ {
+  "name" : "tomDT2",
+  "label": "tom data type 2",
+  "description" : "tom data type 2",
   "attributes" : [
   {
-    "name": "att11,
-    "default": "tomat11",
+    "name": "att21",
+    "default": "tomat21",
     "type": "string",
-    "label": "Tom Attribute 11",
+    "label": "Tom Attribute 21",
     "required": true,
     "hidden": false,
     "immutable": false,
     "secured": false
   },
   {
-    "name": "att12",
-    "default": "tomat12",
+    "name": "att22",
+    "default": "tomat22",
     "type": "string",
-    "label": "Tom Attribute 12",
+    "label": "Tom Attribute 22",
     "required": true,
     "hidden": false,
     "immutable": false,
