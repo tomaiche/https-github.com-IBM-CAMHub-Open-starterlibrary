@@ -1,4 +1,4 @@
-[
+{
     {
       "name": "TomDataType1",
       "label": "Tom Data Type 1",
@@ -37,4 +37,4 @@
       "name": "tomt3",
       "label": "Tom Data Type 3"
     }
-]
+}
