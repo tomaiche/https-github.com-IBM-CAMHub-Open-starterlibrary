@@ -1,0 +1,31 @@
+    {
+      "name": "TomDataType1",
+      "label": "Tom Data Type 1",
+      "TomDataType1":
+      [
+        {
+        "name": "TomAttr1",
+        "type": "string",
+        "description": "1st Attribute",
+        "label": "tomat1",
+        "required": "false",
+        "secured": "false",
+        "immutable": "false",
+        "hidden": "false",
+        "default": "TomAt1",
+        "options": null
+        },
+        {
+        "name": "TomAttr2",
+        "type": "string",
+        "description": "2nd Attribute",
+        "label": "tomat2",
+        "required": "false",
+        "secured": "false",
+        "immutable": "false",
+        "hidden": "false",
+        "default": "TomAt2",
+        "options": null
+        }
+      ]
+    }
