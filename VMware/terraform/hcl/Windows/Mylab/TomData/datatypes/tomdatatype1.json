@@ -1,10 +1,10 @@
-  {
+{
   "name" : "tomDT1",
   "label": "tom data type 1",
   "description" : "tom data type 1",
   "attributes" : [
   {
-    "name": "att11,
+    "name": "att11",
     "default": "tomat11",
     "type": "string",
     "label": "Tom Attribute 11",
@@ -24,4 +24,4 @@
     "secured": false
   }
  ]
- }
+}
