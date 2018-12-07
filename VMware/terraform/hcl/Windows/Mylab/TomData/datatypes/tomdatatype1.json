@@ -1,4 +1,5 @@
-  {
+ {
+ {
   "name" : "tomDT1",
   "label": "tom data type 1",
   "description" : "tom data type 1",
@@ -52,3 +53,4 @@
   }
  ]
  }
+}
