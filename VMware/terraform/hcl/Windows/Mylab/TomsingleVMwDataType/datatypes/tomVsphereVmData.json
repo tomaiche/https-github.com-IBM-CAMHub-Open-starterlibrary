@@ -113,7 +113,7 @@
       "description": "Data store or storage cluster name for target virtual machine's disks",
       "hidden": false,
       "label": "Template Disk Datastore - vm_1",
-      "default": "DS-CAM	",
+      "default": "DS-CAM",
       "secured": false,
       "required": true,
       "immutable": false
@@ -227,7 +227,7 @@
       "description": "Target vSphere datacenter for virtual machine creation",
       "hidden": false,
       "label": "vSphere Datacenter - vm_1",
-      "default": "CloudFoundry",
+      "default": "ICP4B",
       "secured": false,
       "required": false,
       "immutable": false
