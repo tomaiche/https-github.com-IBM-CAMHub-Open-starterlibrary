@@ -172,10 +172,10 @@ resource "vsphere_virtual_machine" "vm_1" {
 
     customize {
       windows_options {
-        computer_name  = "${var.vm_1_name}"
-        workgroup      = "${var.vm_1_domain}"
-        admin_password = "TecTec123"
-      }
+		     computer_name  = "${var.vm_1_name}"
+		     admin_password = "TecTec123"
+         workgroup      = "tecicpcam"
+	    }
       network_interface {
         ipv4_address = "${var.vm_1_ipv4_address}"
         ipv4_netmask = "${var.vm_1_ipv4_prefix_length}"
@@ -200,6 +200,14 @@ resource "vsphere_virtual_machine" "vm_1" {
     unit_number    = 0	  
   }
 	
+  disk {
+    label          = "${var.vm_1_name}disk1.vmdk"
+    size           = "${var.vm_1_root_disk_size}"
+    keep_on_remove = "${var.vm_1_root_disk_keep_on_remove}"
+    datastore_id   = "${data.vsphere_datastore.vm_1_datastore.id}"
+    unit_number    = 1
+  }
+	
   connection {
     type     = "winrm"
     host     = "${var.vm_1_ipv4_address}"
@@ -207,25 +215,11 @@ resource "vsphere_virtual_machine" "vm_1" {
     password = "TecTec123"
   }
   provisioner "file" {
-    destination = "C:/windows/system32/drivers/etc/hosts"
+    destination = "C:/windows/system32/drivers/etc/hosts.tom"
 
     content = <<EOF
-
- 10.7.24.151     cam-content-runtime.iccmpl.demo cam-content-runtime
-
+ 9.128.135.248 cam-content-runtime.icpcam.tecparis
  EOF
 
-    }
-
-  provisioner "chef" {
-  server_url      = "https://cam-content-runtime.iccmpl.demo/organizations/chef-org"
-  user_name       = "chef-admin"
-  recreate_client = "true"  
-  user_key        = "${file("chef-admin.pem")}"
-  ssl_verify_mode = "verify_none"
-  node_name       = "${var.vm_1_name}"
-  run_list        = [ "tomwin01" ]
-#  run_list        = ["role[httpd24-base-install]"]
-  version         = "12.4.1"
-  }
-  }
+    }	
+}
