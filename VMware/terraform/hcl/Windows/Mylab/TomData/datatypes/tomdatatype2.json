@@ -1,27 +1,33 @@
  {
-  "name" : "tomDT2",
+  "name" : "tomData2",
   "label": "tom data type 2",
   "description" : "tom data type 2",
   "attributes" : [
   {
-    "name": "att21",
-    "default": "tomat21",
+    "name": "tomparm1",
     "type": "string",
-    "label": "Tom Attribute 21",
-    "required": true,
-    "hidden": false,
-    "immutable": false,
-    "secured": false
-  },
-  {
-    "name": "att22",
-    "default": "tomat22",
-    "type": "string",
-    "label": "Tom Attribute 22",
-    "required": true,
-    "hidden": false,
-    "immutable": false,
-    "secured": false
+    "description": "tomparm1",
+    "label": "tomparm1",
+    "required": "false",
+    "secured": "false",
+    "immutable": "false",
+    "hidden": "false",
+    "default": null,
+    "options": [
+      {
+        "label": "option1",
+        "value": "value1"
+      },
+      {
+        "label": "option2",
+        "value": "value2",
+        "default": "true"
+      },
+      {
+        "label": "option3",
+        "value": "value3"
+      }
+    ]
   }
- ]
+]
  }
